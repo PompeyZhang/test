@@ -5,34 +5,6 @@ using System.Collections.Generic;
 
 public static class LayersMask
 {
-    public const int none = 0;
-    public const int def = 1 << Layers.def;
-    public const int transparentFx = 1 << Layers.transparentFx;
-    public const int igoreRaycast = 1 << Layers.igoreRaycast;
-    public const int water = 1 << Layers.water;
-    public const int ui = 1 << Layers.ui;
-    public const int midUI = 1 << Layers.midUI;
-    public const int topUI = 1 << Layers.topUI;
-    public const int sceneObject = 1 << Layers.sceneObject;
-    public const int assist = 1 << Layers.assist;
-    public const int collision = 1 << Layers.collision;
-    public const int character = 1 << Layers.character;
-    public const int monsterWidget = 1 << Layers.monsterWidget;
-    public const int monster = 1 << Layers.monster;
-    public const int hud = 1 << Layers.hud;
-    public const int hurtNumber = 1 << Layers.hurtNumber;
-    public const int weapon = 1 << Layers.weapon;
-    public const int doodad = 1 << Layers.doodad;
-    public const int ui3d = 1 << Layers.ui3d;
-    public const int skybox = 1 << Layers.skybox;
-    public const int joystick = 1 << Layers.joystick;
-    public const int obstacle = 1 << Layers.obstacle;
-    public const int dragbox = 1 << Layers.dragbox;
-    public const int creature = LayersMask.character | LayersMask.monster | LayersMask.monsterWidget;
-    public const int allUI = LayersMask.ui | LayersMask.midUI | LayersMask.topUI | LayersMask.ui3d;
-    public const int all = 0x0fffffff;
-    public const int UGUI = 1 << Layers.UGUI;
-    public const int Grenade = 1 << Layers.Grenade;
     public static int GetLayerMask(int layer)
     {
         return 1 << layer;
